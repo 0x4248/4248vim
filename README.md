@@ -1,4 +1,4 @@
-# Lewvim
+# 4248vim
 
 My personal [lazy.vim](https://www.lazyvim.org/plugins) configuration.
 
@@ -6,7 +6,7 @@ My personal [lazy.vim](https://www.lazyvim.org/plugins) configuration.
 
 ```bash
 mv ~/.config/nvim ~/.config/nvim.bak
-git clone https://www.github.com/0x4248/lewvim ~/.config/nvim
+git clone https://www.github.com/0x4248/4248vim ~/.config/nvim
 nvim
 ```
 
