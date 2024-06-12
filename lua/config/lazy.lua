@@ -5,7 +5,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
-require("lazy").setup({
+require("lazy").setup({w
   spec = {
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     { "navarasu/onedark.nvim" },
