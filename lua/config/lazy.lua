@@ -5,7 +5,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
-require("lazy").setup({w
+require("lazy").setup({
   spec = {
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     { "navarasu/onedark.nvim" },
@@ -13,7 +13,7 @@ require("lazy").setup({w
       "nvimdev/dashboard-nvim",
       event = "VimEnter",
       opts = function()
-        local logo = [[
+        local logo = [[a
 ██╗  ██╗██████╗ ██╗  ██╗ █████╗ ██╗   ██╗██╗███╗   ███╗
 ██║  ██║╚════██╗██║  ██║██╔══██╗██║   ██║██║████╗ ████║
 ███████║ █████╔╝███████║╚█████╔╝██║   ██║██║██╔████╔██║
