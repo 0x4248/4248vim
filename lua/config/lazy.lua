@@ -13,7 +13,7 @@ require("lazy").setup({
       "nvimdev/dashboard-nvim",
       event = "VimEnter",
       opts = function()
-        local logo = [[a
+        local logo = [[
 ██╗  ██╗██████╗ ██╗  ██╗ █████╗ ██╗   ██╗██╗███╗   ███╗
 ██║  ██║╚════██╗██║  ██║██╔══██╗██║   ██║██║████╗ ████║
 ███████║ █████╔╝███████║╚█████╔╝██║   ██║██║██╔████╔██║
@@ -31,7 +31,7 @@ require("lazy").setup({
           config = {
             header = vim.split(logo, "\n"),
         center = {
-          { action = LazyVim.telescope("files"),                                    desc = " Find File",       icon = " ", key = "f" },
+          { action = "Telescope",                                                desc = " Find File",       icon = " ", key = "f" },
           { action = "ene | startinsert",                                        desc = " New File",        icon = " ", key = "n" },
           { action = "Telescope oldfiles",                                       desc = " Recent Files",    icon = " ", key = "r" },
           { action = "Telescope live_grep",                                      desc = " Find Text",       icon = " ", key = "g" },
