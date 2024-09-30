@@ -1,7 +1,5 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
-local version = "1.2"
-
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -93,7 +91,7 @@ require("lazy").setup({
                 key = "e",
               },
               {
-                action = [[lua LazyVim.telescope.config_files()()]],
+                action = "lua LazyVim.pick.config_files()()",
                 desc = " Config",
                 icon = " ",
                 key = "c",
@@ -130,6 +128,7 @@ require("lazy").setup({
               },
             },
             footer = function()
+              local version = "1.2"
               local stats = require("lazy").stats()
               local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
               local date = os.date("%h %d %Y %H:%M")
