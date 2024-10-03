@@ -2,17 +2,23 @@ return {{
 	"LazyVim/LazyVim",
 	import = "lazyvim.plugins"
 	}, {
-		"tokyonight.nvim",
-		opts = {
-			transparent = true,
-			styles = {
-				sidebars = "transparent",
-				floats = "transparent"
+		"navarasu/onedark.nvim",
+		config = function()
+			require('onedark').setup {
+				style = 'warmer',
+				transparent = true,
+				code_style = {
+					comments = 'italic',
+				}
 			}
-		}
+			require('onedark').load()
+		end
 	}, {
 		"wakatime/vim-wakatime",
 		lazy = false
+	}, {
+		'stevearc/dressing.nvim',
+		opts = {},
 	}, {
 		"mattn/emmet-vim",
 		lazy = true
@@ -55,7 +61,7 @@ return {{
 		config = function()
 		  require("nvim-treesitter.configs").setup{
 			highlight = { enable = true },
-			ensure_installed = { "javascript", "lua", "python", "html", "css", "json", "yaml", "typescript", "tsx", "graphql", "bash", "vim", "cpp", "rust", "go", "java" },
+			ensure_installed = { "javascript", "lua", "python", "html", "css", "json", "yaml", "typescript", "tsx", "graphql", "bash", "vim", "cpp", "rust", "go", "java", "c"},
 		  }
 		end,
 	}, {
