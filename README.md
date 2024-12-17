@@ -2,6 +2,8 @@
 
 My personal [lazy.vim](https://www.lazyvim.org/plugins) configuration.
 
+![Demo](doc/demo.png)
+
 ## Installation
 
 ```bash
