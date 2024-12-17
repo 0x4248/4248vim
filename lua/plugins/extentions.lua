@@ -50,12 +50,6 @@ return {{
 			}
 		end
 	}, {
-		"nvim-tree/nvim-tree.lua",
-		requires = "nvim-tree/nvim-web-devicons",
-		config = function()
-			require("nvim-tree").setup()
-		end
-	}, {
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
 		config = function()
