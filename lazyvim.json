@@ -1,17 +1,6 @@
 {
   "extras": [
-<<<<<<< HEAD
-    "lazyvim.plugins.extras.ai.copilot"
-=======
-    "lazyvim.plugins.extras.coding.copilot",
-    "lazyvim.plugins.extras.coding.copilot-chat",
-    "lazyvim.plugins.extras.editor.outline",
-    "lazyvim.plugins.extras.formatting.black",
-    "lazyvim.plugins.extras.formatting.prettier",
-    "lazyvim.plugins.extras.linting.eslint",
-    "lazyvim.plugins.extras.util.dot",
-    "lazyvim.plugins.extras.util.mini-hipatterns"
->>>>>>> 81d8e30b54a8decf5ba33c683ee7d0f6c9e31d98
+    
   ],
   "news": {
     "NEWS.md": "10960"
